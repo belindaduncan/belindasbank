@@ -5,22 +5,14 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Home() {
   useEffect(() => {
-    const bootstrap = window.bootstrap;
-    console.log('Bootstrap:', bootstrap);
+    console.log('Bootstrap:', window.bootstrap);
     const myCarousel = document.querySelector('#myCarousel');
-    let carouselInstance;
-    if (myCarousel && bootstrap) {
-      carouselInstance = new bootstrap.Carousel(myCarousel, {
+    if (myCarousel) {
+      new window.bootstrap.Carousel(myCarousel, {
         interval: 8000,
         ride: 'carousel'
       });
     }
-  
-    return () => {
-      if (carouselInstance) {
-        carouselInstance.dispose();
-      }
-    };
   }, []);
 
   return (
@@ -69,7 +61,7 @@ function Home() {
                   and innovative solutions tailored just for you.
                 </p>
                 <p>
-                <Link to="/CreateAccount" className="btn btn-lg btn-primary">Get Started Today</Link>
+                  <Link to="/CreateAccount" className="btn btn-lg btn-primary">Get Started Today</Link>
                 </p>
               </div>
             </div>
@@ -87,7 +79,7 @@ function Home() {
                   Already have an account? Login here to your account.
                 </p>
                 <p>
-                <Link to="/login" className="btn btn-lg btn-primary">Login</Link>
+                  <Link to="/login" className="btn btn-lg btn-primary">Login</Link>
                 </p>
               </div>
             </div>
@@ -105,7 +97,7 @@ function Home() {
                   Review transactions with just one click. 
                 </p>
                 <p>
-                <Link to="/history" className="btn btn-lg btn-primary">Transactions</Link>
+                  <Link to="/history" className="btn btn-lg btn-primary">Transactions</Link>
                 </p>
               </div>
             </div>
