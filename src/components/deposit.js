@@ -61,7 +61,7 @@ function Deposit() {
   return (
     <div className="text-center">
       <form className="form-signin" onSubmit={(e) => e.preventDefault()}>
-        <img className="mb-4" src="/assets/deposit.jpg" alt="Deposit" width="72" height="72" />
+        <img className="mb-4" src="/assets/deposit.JPG" alt="Deposit" width="72" height="72" />
         <h1 className="h3 mb-3 font-weight-bold text-white">Deposit</h1>
 
         {status && <div className={status.includes('fail') ? 'alert alert-danger' : 'alert alert-success'}>
