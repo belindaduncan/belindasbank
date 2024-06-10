@@ -66,7 +66,7 @@ const Withdraw = () => {
   return (
     <div className="text-center">
       <form className="form-signin" onSubmit={(e) => e.preventDefault()}>
-        <img className="mb-4" src="/assets/withdraw.png" alt="Withdraw" width="72" height="72" />
+        <img className="mb-4" src="/assets/withdraw.jpg" alt="Withdraw" width="72" height="72" />
         <h1 className="h3 mb-3 font-weight-bold text-white">Withdraw</h1>
 
         {status && <div className={status.includes('fail') ? 'alert alert-danger' : 'alert alert-success'}>
