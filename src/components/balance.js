@@ -52,6 +52,7 @@ function Balance() {
   return (
     <div className="text-center form-signin">
       <h1 className="h3 mb-3 fw-normal text-white">Balance</h1>
+      <img className="mb-4" src="/assets/balance.jpg" alt="Withdraw" width="72" height="72" />
       {status && <div className={`alert ${status.includes('fail') ? 'alert-danger' : 'alert-success'}`}>
         {status}
       </div>}
