@@ -33,6 +33,7 @@ function CreateAccount() {
   return (
     <div className="text-center">
       <form className="form-signin" onSubmit={handleSignUp}>
+      <img className="mb-4" src="/assets/create.jpg" alt="Withdraw" width="72" height="72" />    
         <h1 className="h3 mb-3 font-weight-bold text-white">Create Account</h1>
 
         {status && <div className={status.includes('Error') ? 'alert alert-danger' : 'alert alert-success'}>
